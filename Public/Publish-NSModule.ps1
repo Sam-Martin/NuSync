@@ -1,4 +1,4 @@
-﻿Function Publish-NSModules{
+﻿Function Publish-NSModule{
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory=$True)]
@@ -28,12 +28,12 @@
         }
 
         If($ExcludeModules -and $(Compare-NSModuleInList -ModuleList $ExcludeModules -ModuleToCheck $Module)){
-            Write-verbose "You asked me to exclude $($Module.Name) $($Module.Version), skipping"
+            Write-Verbose "You asked me to exclude $($Module.Name) $($Module.Version), skipping"
             Continue
         }
 
         If(Find-Module @FindModuleParams){
-            Write-verbose "$($Module.Name) $($Module.Version) already exists in $Repository"
+            Write-Verbose "$($Module.Name) $($Module.Version) already exists in $Repository"
             Continue
         }
 

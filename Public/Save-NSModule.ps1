@@ -1,4 +1,4 @@
-﻿Function Save-NSModules{
+﻿Function Save-NSModule{
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory=$True)]
