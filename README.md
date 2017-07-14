@@ -1,4 +1,5 @@
-# NuSync
+# NuSync [![Build status](https://ci.appveyor.com/api/projects/status/epyk14bccann3838/branch/master?svg=true)](https://ci.appveyor.com/project/Sam-Martin/nusync/branch/master)
+
 PowerShell module to copy the contents of one PowerShell NuGet repository to another
 
 # Example
