@@ -8,5 +8,5 @@ $DestinationRepository = "TestGallery"
 $NugetApiKey = "xxxxxxx-xxx-xxx-xxx-xxxxxxxxxxxx"
 
 Import-Module .\NuSync.psd1
-Sync-SinkModules -SourceRepository $SourceRepository -DestinationRepository $DestinationRepository -NugetApiKey $NugetApiKey -Verbose
+Sync-NSModules -SourceRepository $SourceRepository -DestinationRepository $DestinationRepository -NugetApiKey $NugetApiKey -Verbose
 ```
