@@ -1,4 +1,4 @@
-﻿Function Find-NSAllModuleVersions{
+﻿Function Find-NSAllModuleVersion{
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory=$True)]

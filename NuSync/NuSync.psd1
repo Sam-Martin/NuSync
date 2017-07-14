@@ -66,7 +66,7 @@ Description = 'PowerShell module to copy the contents of one PowerShell NuGet re
 # NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = '*'
+FunctionsToExport = 'Find-NSAllModuleVersion','Publish-NSModule','Save-NSModule','Sync-NSModule'
 
 # Cmdlets to export from this module
 CmdletsToExport = '*'

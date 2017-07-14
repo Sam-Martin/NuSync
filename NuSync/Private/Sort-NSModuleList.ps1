@@ -3,7 +3,7 @@
         [Parameter(Mandatory=$True)]
         $ModuleList
     )
-    $ModuleList =  $ModuleList | Select *, 
+    $ModuleList =  $ModuleList | Select-Object *, 
         @{L="Major";E={($_.Version -split '\.')[0]}},
         @{L="Minor";E={($_.Version -split '\.')[1]}},
         @{L="Patch";E={($_.Version -split '\.')[2]}},
